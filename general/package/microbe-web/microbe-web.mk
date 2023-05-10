@@ -4,8 +4,11 @@
 #
 ################################################################################
 
-MICROBE_WEB_VERSION = $(shell git ls-remote https://github.com/OpenIPC/microbe-web/ master | awk '{ print $$1 }')
-MICROBE_WEB_SITE = $(call github,openipc,microbe-web,$(MICROBE_WEB_VERSION))
+#replacing these to build in my web updates for ptz
+#MICROBE_WEB_VERSION = $(shell git ls-remote https://github.com/OpenIPC/microbe-web/ master | awk '{ print $$1 }')
+# Key for dev site
+MICROBE_WEB_VERSION = 48a73f54c896c9315b8f4782b34670dc3da92f17
+MICROBE_WEB_SITE = $(call github,cdg123,OpenIPC-microbe-web,$(MICROBE_WEB_VERSION))
 MICROBE_WEB_LICENSE = MIT
 MICROBE_WEB_LICENSE_FILES = LICENSE
 
